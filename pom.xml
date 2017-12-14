@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.organization.crossover</groupId>
+  <artifactId>crossover-demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Cross Over Demo</name>
+  <description>This project is for giving a demo of my project to cross over</description>
+  
+  <properties>
+		<java.version>1.8</java.version>
+		<selenium.java>3.8.1</selenium.java>
+		<selenium.firefox>3.8.1</selenium.firefox>
+		<selenium.chrome>3.8.1</selenium.chrome>
+		<cucumber.junit>1.2.4</cucumber.junit>	
+		<cucumber.java>1.2.5</cucumber.java>
+		<apache.commons>3.6.1</apache.commons>		
+	</properties>
+	 
+	<dependencies>
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-java</artifactId>
+    		<version>${selenium.java}</version>    		
+		</dependency>
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-firefox-driver</artifactId>
+    		<version>${selenium.firefox}</version>    		
+		</dependency>
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-chrome-driver</artifactId>
+    		<version>${selenium.chrome}</version>    		
+		</dependency>
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>htmlunit-driver</artifactId>
+    		<version>2.28.2</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>info.cukes</groupId>
+    		<artifactId>cucumber-java</artifactId>
+    		<version>${cucumber.java}</version>    		
+		</dependency>
+		<dependency>
+    		<groupId>info.cukes</groupId>
+    		<artifactId>cucumber-junit</artifactId>
+    		<version>${cucumber.junit}</version>     		   		
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.commons</groupId>
+    		<artifactId>commons-math3</artifactId>
+    		<version>${apache.commons}</version>
+		</dependency>
+					
+    </dependencies>
+    
+    <build>
+  		<plugins>
+  			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>								
+		</plugins>
+	</build>			 
+</project>
